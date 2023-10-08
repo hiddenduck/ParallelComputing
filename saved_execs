@@ -1,0 +1,32 @@
+###exec no unrols
+     1011214204269      instructions              #    1.54  insn per cycle
+      657820328050      cycles
+
+     199.477695517 seconds time elapsed
+
+     199.481537000 seconds user
+       0.001000000 seconds sys
+
+
+###exec2 unrol a[i][k] = 0
+
+
+     1011217670017      instructions              #    1.54  insn per cycle
+      657710416531      cycles
+
+     199.530275178 seconds time elapsed
+
+     199.532723000 seconds user
+       0.001000000 seconds sys
+
+exec3 
+
+     1008389719787      instructions              #    1.54  insn per cycle
+      656306855024      cycles
+
+     199.086966117 seconds time elapsed
+
+     199.089795000 seconds user
+       0.000000000 seconds sys
+
+

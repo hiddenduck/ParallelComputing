@@ -1,0 +1,1 @@
+gprof ./MD.exe | gprof2dot | dot -Tpng -o graph.png
