@@ -474,8 +474,8 @@ double Potential() {
                 }
                 quot=s/r2; // remoção do rnorm e da sqrt uma vez que múltiplicamos o pow no term1 e no term2 um número par de vezes
                 // trocar ordem do term2 e term1 para aproveitar term2 no calculo do term1
-                term1 = quot*quot*quot*quot*quot*quot; // pow -> multiplicação
-                
+                term1 = quot*quot*quot; // pow -> multiplicação
+                term1 = term1*term1;
                 
                 Pot += (term1*term1 - term1);
                 
@@ -520,13 +520,13 @@ void computeAccelerations() {
             double rSqd_ = rSqd*rSqd*rSqd;
             f = 24*(2 - rSqd_)/(rSqd_*rSqd_*rSqd);
                 //  from F = ma, where m = 1 in natural units!
-            a[i][0] += rij[0] * f;
-            a[i][1] += rij[1] * f;
-            a[i][2] += rij[2] * f;
-
-            a[j][0] -= rij[0] * f;
-            a[j][1] -= rij[1] * f;
-            a[j][2] -= rij[2] * f;
+            a[i][0] += f * rij[0];
+            a[i][1] += f * rij[1];
+            a[i][2] += f * rij[2];
+                                 
+            a[j][0] -= f * rij[0];
+            a[j][1] -= f * rij[1];
+            a[j][2] -= f * rij[2];
         }
     }
 }
