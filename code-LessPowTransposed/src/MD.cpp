@@ -447,7 +447,7 @@ double Kinetic() { // Write Function here!
 
 // Function to calculate the potential energy of the system
 double Potential() {
-    double r2, term1, term2, Pot, rx, ry, rz;
+    double quot_, r2, term1, term2, Pot, rx, ry, rz;
     int i, j, k;
 
     double *r_sub0 = (double *)aligned_alloc(64, N * sizeof(double));
@@ -456,39 +456,35 @@ double Potential() {
     double *quot = (double *)aligned_alloc(64, N * sizeof(double));
     double *r_2 = (double *)aligned_alloc(64, N * sizeof(double));
 
-    double s = sigma * sigma;
+    double s = pow(sigma * sigma, -1.);
 
     Pot = 0.;
     for (i = 0; i < N; i++) {
         for (j = i + 1; j < N; j++) {
 
-            r_sub0[j] = r[0][i] - r[0][j];
-            r_sub1[j] = r[1][i] - r[1][j];
-            r_sub2[j] = r[2][i] - r[2][j];
+            r_sub0[j] = (r[0][i] - r[0][j]) * (r[0][i] - r[0][j]);
+            r_sub1[j] = (r[1][i] - r[1][j]) * (r[1][i] - r[1][j]);
+            r_sub2[j] = (r[2][i] - r[2][j]) * (r[2][i] - r[2][j]);
 
             // rx = (r[0][i] - r[0][j]);
             // ry = (r[1][i] - r[1][j]);
             // rz = (r[2][i] - r[2][j]);
         }
-        for (j = i + 1; j < N; j++) {
-            r_sub0[j] = r_sub0[j] * r_sub0[j];
-            r_sub1[j] = r_sub1[j] * r_sub1[j];
-            r_sub2[j] = r_sub2[j] * r_sub2[j];
-        }
+        // for (j = i + 1; j < N; j++) {
+        //     r_sub0[j] = r_sub0[j] * r_sub0[j];
+        //     r_sub1[j] = r_sub1[j] * r_sub1[j];
+        //     r_sub2[j] = r_sub2[j] * r_sub2[j];
+        // }
+
+        // for (j = i + 1; j < N; j++) {
+        //     r_2[j] = r_sub0[j] + r_sub1[j] + r_sub2[j];
+        // }
 
         for (j = i + 1; j < N; j++) {
-            r_2[j] = r_sub0[j] + r_sub1[j] + r_sub2[j];
+            quot_ = s * (r_sub0[j] + r_sub1[j] + r_sub2[j]);
+; 
+            quot[j] = quot_*quot_*quot_;
         }
-
-        for (j = i + 1; j < N; j++) {
-            quot[j] = s / r_2[j]; 
-        }
-
-        for (j = i + 1; j < N; j++) {
-            quot[j] = quot[j]*quot[j]*quot[j];
-            
-        }
-        
 
         for (j = i + 1; j < N; j++) {
             Pot += quot[j] * (quot[j] - 1);
