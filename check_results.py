@@ -16,10 +16,10 @@ with open(sys.argv[2]) as fd_test:
             r"-?[0-9]+(?:\.[0-9]+)?(?:e[+-][0-9]+)?", line))
 
 flag = "Valid"
-for l, (test, control) in enumerate(zip(nums_test, nums_control), start=1):
-    for c,(a, b) in enumerate(zip(test,control), start=1):
+for line, (test, control) in enumerate(zip(nums_test, nums_control), start=1):
+    for col, (a, b) in enumerate(zip(test, control), start=1):
         if not math.isclose(float(a), float(b), rel_tol=1e-12, abs_tol=1e-12):
             flag = "Invalid"
-            print(f"Fail in line:{l} col:{c}")
+            print(f"Fail in line:{line} col:{col}")
 
 print(flag)
