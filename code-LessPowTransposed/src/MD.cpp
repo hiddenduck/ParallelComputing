@@ -456,7 +456,7 @@ double Potential() {
     double *quot = (double *)aligned_alloc(64, N * sizeof(double));
     double *r_2 = (double *)aligned_alloc(64, N * sizeof(double));
 
-    double s = pow(sigma * sigma, -1.);
+    double s = sigma * sigma;
 
     Pot = 0.;
     for (i = 0; i < N; i++) {
@@ -481,7 +481,7 @@ double Potential() {
         // }
 
         for (j = i + 1; j < N; j++) {
-            quot_ = s * (r_sub0[j] + r_sub1[j] + r_sub2[j]);
+            quot_ = s / (r_sub0[j] + r_sub1[j] + r_sub2[j]);
 ; 
             quot[j] = quot_*quot_*quot_;
         }
