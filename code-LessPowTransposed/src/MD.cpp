@@ -81,6 +81,8 @@ double Potential();
 double MeanSquaredVelocity();
 //  Compute total kinetic energy from particle mass and velocities
 double Kinetic();
+// Compute Squared Velocity
+double SquaredVelocity();
 
 int main() {
 
@@ -266,6 +268,7 @@ int main() {
     Tavg = 0;
 
     int tenp = floor(NumTime / 10);
+    double vs; // velocity squared
     fprintf(ofp, "  time (s)              T(t) (K)              P(t) (Pa)           Kinetic En. (n.u.)     Potential En. (n.u.) Total En. (n.u.)\n");
     printf("  PERCENTAGE OF CALCULATION COMPLETE:\n  [");
     for (i = 0; i < NumTime + 1; i++) {
@@ -304,8 +307,9 @@ int main() {
         //  Instantaneous mean velocity squared, Temperature, Pressure
         //  Potential, and Kinetic Energy
         //  We would also like to use the IGL to try to see if we can extract the gas constant
-        mvs = MeanSquaredVelocity();
-        KE = Kinetic();
+        vs = SquaredVelocity();
+        mvs = vs/N;
+        KE = m*vs*0.5;
         PE = Potential();
 
         // Temperature from Kinetic Theory
@@ -392,6 +396,23 @@ void initialize() {
      printf("  %6.3e  %6.3e  %6.3e\n",v[i][0],v[i][1],v[i][2]);
      }
      */
+}
+
+//  Function to calculate the velocity squared
+double SquaredVelocity() {
+
+    double vx2 = 0;
+    double vy2 = 0;
+    double vz2 = 0;
+
+    for (int i = 0; i < N; i++) {
+
+        vx2 = vx2 + v[0][i] * v[0][i];
+        vy2 = vy2 + v[1][i] * v[1][i];
+        vz2 = vz2 + v[2][i] * v[2][i];
+    }
+
+    return vx2 + vy2 + vz2;
 }
 
 //  Function to calculate the averaged velocity squared
