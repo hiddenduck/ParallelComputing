@@ -1,0 +1,1795 @@
+
+Analyzing loop at ./src/MD.cpp:451
+
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vz2_15 = _14 + vz2_32;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vy2_12 = _11 + vy2_31;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vx2_9 = _8 + vx2_30;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: Unsupported pattern.
+./src/MD.cpp:451: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:451: note: unexpected pattern.
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vz2_15 = _14 + vz2_32;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vy2_12 = _11 + vy2_31;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vx2_9 = _8 + vx2_30;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: Unsupported pattern.
+./src/MD.cpp:451: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:451: note: unexpected pattern.
+./src/MD.cpp:444: note: vectorized 0 loops in function.
+
+./src/MD.cpp:451: note: misalign = 0 bytes of ref N
+./src/MD.cpp:451: note: not consecutive access N.12_29 = N;
+
+./src/MD.cpp:451: note: Failed to SLP the basic block.
+./src/MD.cpp:451: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:451: note: misalign = 0 bytes of ref N
+./src/MD.cpp:451: note: not consecutive access N.12_29 = N;
+
+./src/MD.cpp:451: note: Failed to SLP the basic block.
+./src/MD.cpp:451: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:444: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: Failed to SLP the basic block.
+./src/MD.cpp:453: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: Failed to SLP the basic block.
+./src/MD.cpp:453: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:444: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:444: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:457: note: not vectorized: not enough data-refs in basic block.
+
+Analyzing loop at ./src/MD.cpp:469
+
+./src/MD.cpp:469: note: step unknown.
+./src/MD.cpp:469: note: reduction: unsafe fp math optimization: kin_15 = _14 + kin_8;
+
+./src/MD.cpp:469: note: Unknown def-use cycle pattern.
+./src/MD.cpp:469: note: Unsupported pattern.
+./src/MD.cpp:469: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:469: note: unexpected pattern.
+./src/MD.cpp:469: note: step unknown.
+./src/MD.cpp:469: note: reduction: unsafe fp math optimization: kin_15 = _14 + kin_8;
+
+./src/MD.cpp:469: note: Unknown def-use cycle pattern.
+./src/MD.cpp:469: note: Unsupported pattern.
+./src/MD.cpp:469: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:469: note: unexpected pattern.
+./src/MD.cpp:464: note: vectorized 0 loops in function.
+
+./src/MD.cpp:469: note: misalign = 0 bytes of ref N
+./src/MD.cpp:469: note: not consecutive access N.14_24 = N;
+
+./src/MD.cpp:469: note: Failed to SLP the basic block.
+./src/MD.cpp:469: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:469: note: misalign = 0 bytes of ref N
+./src/MD.cpp:469: note: not consecutive access N.14_24 = N;
+
+./src/MD.cpp:469: note: Failed to SLP the basic block.
+./src/MD.cpp:469: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:464: note: misalign = 0 bytes of ref m
+./src/MD.cpp:464: note: not consecutive access pretmp_42 = m;
+
+./src/MD.cpp:464: note: Failed to SLP the basic block.
+./src/MD.cpp:464: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:464: note: misalign = 0 bytes of ref m
+./src/MD.cpp:464: note: not consecutive access pretmp_42 = m;
+
+./src/MD.cpp:464: note: Failed to SLP the basic block.
+./src/MD.cpp:464: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: Failed to SLP the basic block.
+./src/MD.cpp:474: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: Failed to SLP the basic block.
+./src/MD.cpp:474: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:464: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:464: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:480: note: not vectorized: not enough data-refs in basic block.
+
+Analyzing loop at ./src/MD.cpp:491
+
+./src/MD.cpp:491: note: not vectorized: inner-loop count not invariant.
+./src/MD.cpp:491: note: bad loop form.
+Analyzing loop at ./src/MD.cpp:492
+
+./src/MD.cpp:492: note: step unknown.
+./src/MD.cpp:492: note: reduction: unsafe fp math optimization: Pot_31 = _30 + Pot_38;
+
+./src/MD.cpp:492: note: Unknown def-use cycle pattern.
+./src/MD.cpp:492: note: Unsupported pattern.
+./src/MD.cpp:492: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:492: note: unexpected pattern.
+./src/MD.cpp:492: note: step unknown.
+./src/MD.cpp:492: note: reduction: unsafe fp math optimization: Pot_31 = _30 + Pot_38;
+
+./src/MD.cpp:492: note: Unknown def-use cycle pattern.
+./src/MD.cpp:492: note: Unsupported pattern.
+./src/MD.cpp:492: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:492: note: unexpected pattern.
+./src/MD.cpp:484: note: vectorized 0 loops in function.
+
+./src/MD.cpp:488: note: misalign = 0 bytes of ref sigma
+./src/MD.cpp:488: note: misalign = 0 bytes of ref N
+./src/MD.cpp:488: note: not consecutive access sigma.15_6 = sigma;
+
+./src/MD.cpp:488: note: not consecutive access pretmp_71 = N;
+
+./src/MD.cpp:488: note: Failed to SLP the basic block.
+./src/MD.cpp:488: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:488: note: misalign = 0 bytes of ref sigma
+./src/MD.cpp:488: note: misalign = 0 bytes of ref N
+./src/MD.cpp:488: note: not consecutive access sigma.15_6 = sigma;
+
+./src/MD.cpp:488: note: not consecutive access pretmp_71 = N;
+
+./src/MD.cpp:488: note: Failed to SLP the basic block.
+./src/MD.cpp:488: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:492: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:484: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:484: note: Unknown alignment for access: r
+./src/MD.cpp:484: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:484: note: Unknown alignment for access: r
+./src/MD.cpp:484: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:484: note: Unknown alignment for access: r
+./src/MD.cpp:484: note: Failed to SLP the basic block.
+./src/MD.cpp:484: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:484: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:484: note: Unknown alignment for access: r
+./src/MD.cpp:484: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:484: note: Unknown alignment for access: r
+./src/MD.cpp:484: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:484: note: Unknown alignment for access: r
+./src/MD.cpp:484: note: Failed to SLP the basic block.
+./src/MD.cpp:484: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: Failed to SLP the basic block.
+./src/MD.cpp:494: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: Failed to SLP the basic block.
+./src/MD.cpp:494: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:484: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:484: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:484: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:491: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:506: note: misalign = 0 bytes of ref epsilon
+./src/MD.cpp:506: note: not consecutive access epsilon.17_33 = epsilon;
+
+./src/MD.cpp:506: note: Failed to SLP the basic block.
+./src/MD.cpp:506: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:506: note: misalign = 0 bytes of ref epsilon
+./src/MD.cpp:506: note: not consecutive access epsilon.17_33 = epsilon;
+
+./src/MD.cpp:506: note: Failed to SLP the basic block.
+./src/MD.cpp:506: note: not vectorized: failed to find SLP opportunities in basic block.
+
+Analyzing loop at ./src/MD.cpp:522
+
+./src/MD.cpp:522: note: not vectorized: inner-loop count not invariant.
+./src/MD.cpp:522: note: bad loop form.
+Analyzing loop at ./src/MD.cpp:523
+
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[0][i_2] and a[0][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[0][i_2] and a[0][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[0][i_2] and a[0][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[1][i_2] and a[1][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[1][i_2] and a[1][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[1][i_2] and a[1][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[2][i_2] and a[2][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[2][i_2] and a[2][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[2][i_2] and a[2][i_74]
+./src/MD.cpp:523: note: Unknown alignment for access: r
+./src/MD.cpp:523: note: Unknown alignment for access: r
+./src/MD.cpp:523: note: Unknown alignment for access: r
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: not vectorized: complicated access pattern.
+./src/MD.cpp:523: note: bad data access.
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[0][i_2] and a[0][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[0][i_2] and a[0][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[0][i_2] and a[0][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[1][i_2] and a[1][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[1][i_2] and a[1][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[1][i_2] and a[1][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[2][i_2] and a[2][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[2][i_2] and a[2][i_74]
+./src/MD.cpp:523: note: versioning for alias required: can't determine dependence between a[2][i_2] and a[2][i_74]
+./src/MD.cpp:523: note: Unknown alignment for access: r
+./src/MD.cpp:523: note: Unknown alignment for access: r
+./src/MD.cpp:523: note: Unknown alignment for access: r
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: Unknown alignment for access: a
+./src/MD.cpp:523: note: not vectorized: complicated access pattern.
+./src/MD.cpp:523: note: bad data access.
+./src/MD.cpp:512: note: vectorized 0 loops in function.
+
+./src/MD.cpp:517: note: misalign = 0 bytes of ref N
+./src/MD.cpp:517: note: not consecutive access N.18_28 = N;
+
+./src/MD.cpp:517: note: Failed to SLP the basic block.
+./src/MD.cpp:517: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:517: note: misalign = 0 bytes of ref N
+./src/MD.cpp:517: note: not consecutive access N.18_28 = N;
+
+./src/MD.cpp:517: note: Failed to SLP the basic block.
+./src/MD.cpp:517: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:519: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:523: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:512: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:512: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:512: note: Unknown alignment for access: r
+./src/MD.cpp:512: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:512: note: Unknown alignment for access: r
+./src/MD.cpp:512: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:512: note: Unknown alignment for access: r
+./src/MD.cpp:512: note: Failed to SLP the basic block.
+./src/MD.cpp:512: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:512: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:512: note: Unknown alignment for access: r
+./src/MD.cpp:512: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:512: note: Unknown alignment for access: r
+./src/MD.cpp:512: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:512: note: Unknown alignment for access: r
+./src/MD.cpp:512: note: Failed to SLP the basic block.
+./src/MD.cpp:512: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:528: note: can't determine dependence between a[0][i_2] and a[0][i_74]
+./src/MD.cpp:528: note: can't determine dependence between a[0][i_2] and a[0][i_74]
+./src/MD.cpp:528: note: not vectorized: unhandled data dependence in basic block.
+
+./src/MD.cpp:528: note: can't determine dependence between a[0][i_2] and a[0][i_74]
+./src/MD.cpp:528: note: can't determine dependence between a[0][i_2] and a[0][i_74]
+./src/MD.cpp:528: note: not vectorized: unhandled data dependence in basic block.
+
+./src/MD.cpp:512: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:512: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:512: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:522: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:512: note: not vectorized: no vectype for stmt: rij ={v} {CLOBBER};
+ scalar_type: double[3]
+./src/MD.cpp:512: note: Failed to SLP the basic block.
+./src/MD.cpp:512: note: not vectorized: failed to find SLP opportunities in basic block.
+
+Analyzing loop at ./src/MD.cpp:581
+
+./src/MD.cpp:581: note: not vectorized: control flow in loop.
+./src/MD.cpp:581: note: bad loop form.
+Analyzing loop at ./src/MD.cpp:574
+
+./src/MD.cpp:574: note: misalign = 0 bytes of ref v[0][i_93]
+./src/MD.cpp:574: note: misalign = 0 bytes of ref a[0][i_93]
+./src/MD.cpp:574: note: misalign = 0 bytes of ref v[0][i_93]
+./src/MD.cpp:574: note: misalign = 8 bytes of ref v[1][i_93]
+./src/MD.cpp:574: note: misalign = 8 bytes of ref a[1][i_93]
+./src/MD.cpp:574: note: misalign = 8 bytes of ref v[1][i_93]
+./src/MD.cpp:574: note: misalign = 16 bytes of ref v[2][i_93]
+./src/MD.cpp:574: note: misalign = 16 bytes of ref a[2][i_93]
+./src/MD.cpp:574: note: misalign = 16 bytes of ref v[2][i_93]
+./src/MD.cpp:574: note: virtual phi. skip.
+./src/MD.cpp:574: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:574: note: not ssa-name.
+./src/MD.cpp:574: note: use not simple.
+./src/MD.cpp:574: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:574: note: not ssa-name.
+./src/MD.cpp:574: note: use not simple.
+./src/MD.cpp:574: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:574: note: not ssa-name.
+./src/MD.cpp:574: note: use not simple.
+./src/MD.cpp:574: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:574: note: not ssa-name.
+./src/MD.cpp:574: note: use not simple.
+./src/MD.cpp:574: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:574: note: not ssa-name.
+./src/MD.cpp:574: note: use not simple.
+./src/MD.cpp:574: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:574: note: not ssa-name.
+./src/MD.cpp:574: note: use not simple.
+./src/MD.cpp:574: note: virtual phi. skip.
+
+Vectorizing loop at ./src/MD.cpp:574
+
+./src/MD.cpp:574: note: virtual phi. skip.
+Analyzing loop at ./src/MD.cpp:563
+
+./src/MD.cpp:563: note: misalign = 0 bytes of ref r[0][i_8]
+./src/MD.cpp:563: note: misalign = 0 bytes of ref v[0][i_8]
+./src/MD.cpp:563: note: misalign = 0 bytes of ref a[0][i_8]
+./src/MD.cpp:563: note: misalign = 0 bytes of ref r[0][i_8]
+./src/MD.cpp:563: note: misalign = 0 bytes of ref v[0][i_8]
+./src/MD.cpp:563: note: misalign = 8 bytes of ref r[1][i_8]
+./src/MD.cpp:563: note: misalign = 8 bytes of ref v[1][i_8]
+./src/MD.cpp:563: note: misalign = 8 bytes of ref a[1][i_8]
+./src/MD.cpp:563: note: misalign = 8 bytes of ref r[1][i_8]
+./src/MD.cpp:563: note: misalign = 8 bytes of ref v[1][i_8]
+./src/MD.cpp:563: note: misalign = 16 bytes of ref r[2][i_8]
+./src/MD.cpp:563: note: misalign = 16 bytes of ref v[2][i_8]
+./src/MD.cpp:563: note: misalign = 16 bytes of ref a[2][i_8]
+./src/MD.cpp:563: note: misalign = 16 bytes of ref r[2][i_8]
+./src/MD.cpp:563: note: misalign = 16 bytes of ref v[2][i_8]
+./src/MD.cpp:563: note: virtual phi. skip.
+./src/MD.cpp:563: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:563: note: not ssa-name.
+./src/MD.cpp:563: note: use not simple.
+./src/MD.cpp:563: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:563: note: not ssa-name.
+./src/MD.cpp:563: note: use not simple.
+./src/MD.cpp:563: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:563: note: not ssa-name.
+./src/MD.cpp:563: note: use not simple.
+./src/MD.cpp:563: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:563: note: not ssa-name.
+./src/MD.cpp:563: note: use not simple.
+./src/MD.cpp:563: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:563: note: not ssa-name.
+./src/MD.cpp:563: note: use not simple.
+./src/MD.cpp:563: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:563: note: not ssa-name.
+./src/MD.cpp:563: note: use not simple.
+./src/MD.cpp:563: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:563: note: not ssa-name.
+./src/MD.cpp:563: note: use not simple.
+./src/MD.cpp:563: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:563: note: not ssa-name.
+./src/MD.cpp:563: note: use not simple.
+./src/MD.cpp:563: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:563: note: not ssa-name.
+./src/MD.cpp:563: note: use not simple.
+./src/MD.cpp:563: note: virtual phi. skip.
+
+Vectorizing loop at ./src/MD.cpp:563
+
+./src/MD.cpp:563: note: virtual phi. skip.
+./src/MD.cpp:553: note: vectorized 2 loops in function.
+
+./src/MD.cpp:563: note: misalign = 0 bytes of ref N
+./src/MD.cpp:563: note: not consecutive access N.19_12 = N;
+
+./src/MD.cpp:563: note: Failed to SLP the basic block.
+./src/MD.cpp:563: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:563: note: misalign = 0 bytes of ref N
+./src/MD.cpp:563: note: not consecutive access N.19_12 = N;
+
+./src/MD.cpp:563: note: Failed to SLP the basic block.
+./src/MD.cpp:563: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:572: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:565: note: not vectorized: no vectype for stmt: vect_var_.162_241 = MEM[(double[3][5001] *)vect_pr.158_239];
+ scalar_type: vector(4) double
+./src/MD.cpp:565: note: Failed to SLP the basic block.
+./src/MD.cpp:565: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: Failed to SLP the basic block.
+./src/MD.cpp:565: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: Failed to SLP the basic block.
+./src/MD.cpp:565: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: Failed to SLP the basic block.
+./src/MD.cpp:565: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: Failed to SLP the basic block.
+./src/MD.cpp:565: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: Failed to SLP the basic block.
+./src/MD.cpp:565: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: Unknown alignment for access: a
+./src/MD.cpp:565: note: Unknown alignment for access: r
+./src/MD.cpp:565: note: Unknown alignment for access: v
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: interleaved store with gaps
+./src/MD.cpp:565: note: not vectorized: complicated access pattern.
+./src/MD.cpp:565: note: Failed to SLP the basic block.
+./src/MD.cpp:565: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:553: note: misalign = 0 bytes of ref L
+./src/MD.cpp:553: note: not consecutive access pretmp_200 = L;
+
+./src/MD.cpp:553: note: Failed to SLP the basic block.
+./src/MD.cpp:553: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:553: note: misalign = 0 bytes of ref L
+./src/MD.cpp:553: note: not consecutive access pretmp_200 = L;
+
+./src/MD.cpp:553: note: Failed to SLP the basic block.
+./src/MD.cpp:553: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:581: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:576: note: not vectorized: no vectype for stmt: vect_var_.101_104 = MEM[(double[3][5001] *)vect_pv.97_112];
+ scalar_type: vector(4) double
+./src/MD.cpp:576: note: Failed to SLP the basic block.
+./src/MD.cpp:576: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: interleaved store with gaps
+./src/MD.cpp:576: note: not vectorized: complicated access pattern.
+./src/MD.cpp:576: note: Failed to SLP the basic block.
+./src/MD.cpp:576: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: interleaved store with gaps
+./src/MD.cpp:576: note: not vectorized: complicated access pattern.
+./src/MD.cpp:576: note: Failed to SLP the basic block.
+./src/MD.cpp:576: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: interleaved store with gaps
+./src/MD.cpp:576: note: not vectorized: complicated access pattern.
+./src/MD.cpp:576: note: Failed to SLP the basic block.
+./src/MD.cpp:576: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: interleaved store with gaps
+./src/MD.cpp:576: note: not vectorized: complicated access pattern.
+./src/MD.cpp:576: note: Failed to SLP the basic block.
+./src/MD.cpp:576: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: interleaved store with gaps
+./src/MD.cpp:576: note: not vectorized: complicated access pattern.
+./src/MD.cpp:576: note: Failed to SLP the basic block.
+./src/MD.cpp:576: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: Unknown alignment for access: a
+./src/MD.cpp:576: note: Unknown alignment for access: v
+./src/MD.cpp:576: note: interleaved store with gaps
+./src/MD.cpp:576: note: not vectorized: complicated access pattern.
+./src/MD.cpp:576: note: Failed to SLP the basic block.
+./src/MD.cpp:576: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:553: note: misalign = 0 bytes of ref L
+./src/MD.cpp:553: note: not consecutive access pretmp_202 = L;
+
+./src/MD.cpp:553: note: Failed to SLP the basic block.
+./src/MD.cpp:553: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:553: note: misalign = 0 bytes of ref L
+./src/MD.cpp:553: note: not consecutive access pretmp_202 = L;
+
+./src/MD.cpp:553: note: Failed to SLP the basic block.
+./src/MD.cpp:553: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:583: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:583: note: Unknown alignment for access: r
+./src/MD.cpp:583: note: Failed to SLP the basic block.
+./src/MD.cpp:583: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:583: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:583: note: Unknown alignment for access: r
+./src/MD.cpp:583: note: Failed to SLP the basic block.
+./src/MD.cpp:583: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: Failed to SLP the basic block.
+./src/MD.cpp:584: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: Failed to SLP the basic block.
+./src/MD.cpp:584: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:583: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:583: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:583: note: Unknown alignment for access: r
+./src/MD.cpp:583: note: Failed to SLP the basic block.
+./src/MD.cpp:583: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:583: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:583: note: Unknown alignment for access: r
+./src/MD.cpp:583: note: Failed to SLP the basic block.
+./src/MD.cpp:583: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: Failed to SLP the basic block.
+./src/MD.cpp:584: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: Failed to SLP the basic block.
+./src/MD.cpp:584: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:583: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:583: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:583: note: Unknown alignment for access: r
+./src/MD.cpp:583: note: Failed to SLP the basic block.
+./src/MD.cpp:583: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:583: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:583: note: Unknown alignment for access: r
+./src/MD.cpp:583: note: Failed to SLP the basic block.
+./src/MD.cpp:583: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: Failed to SLP the basic block.
+./src/MD.cpp:584: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:584: note: Unknown alignment for access: v
+./src/MD.cpp:584: note: Failed to SLP the basic block.
+./src/MD.cpp:584: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:583: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:581: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:553: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:601: note: misalign = 0 bytes of ref m
+./src/MD.cpp:601: note: not consecutive access m.21_56 = m;
+
+./src/MD.cpp:601: note: Failed to SLP the basic block.
+./src/MD.cpp:601: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:601: note: misalign = 0 bytes of ref m
+./src/MD.cpp:601: note: not consecutive access m.21_56 = m;
+
+./src/MD.cpp:601: note: Failed to SLP the basic block.
+./src/MD.cpp:601: note: not vectorized: failed to find SLP opportunities in basic block.
+
+Analyzing loop at ./src/MD.cpp:658
+
+./src/MD.cpp:658: note: misalign = 0 bytes of ref v[0][i_87]
+./src/MD.cpp:658: note: misalign = 0 bytes of ref v[0][i_87]
+./src/MD.cpp:658: note: misalign = 8 bytes of ref v[1][i_87]
+./src/MD.cpp:658: note: misalign = 8 bytes of ref v[1][i_87]
+./src/MD.cpp:658: note: misalign = 16 bytes of ref v[2][i_87]
+./src/MD.cpp:658: note: misalign = 16 bytes of ref v[2][i_87]
+./src/MD.cpp:658: note: virtual phi. skip.
+./src/MD.cpp:658: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:658: note: not ssa-name.
+./src/MD.cpp:658: note: use not simple.
+./src/MD.cpp:658: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:658: note: not ssa-name.
+./src/MD.cpp:658: note: use not simple.
+./src/MD.cpp:658: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:658: note: not ssa-name.
+./src/MD.cpp:658: note: use not simple.
+./src/MD.cpp:658: note: virtual phi. skip.
+
+Vectorizing loop at ./src/MD.cpp:658
+
+./src/MD.cpp:658: note: virtual phi. skip.
+Analyzing loop at ./src/MD.cpp:649
+
+./src/MD.cpp:649: note: step unknown.
+./src/MD.cpp:649: note: reduction: unsafe fp math optimization: vSqdSum_158 = vSqdSum_152 + _157;
+
+./src/MD.cpp:649: note: Unknown def-use cycle pattern.
+./src/MD.cpp:649: note: Unsupported pattern.
+./src/MD.cpp:649: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:649: note: unexpected pattern.
+./src/MD.cpp:649: note: step unknown.
+./src/MD.cpp:649: note: reduction: unsafe fp math optimization: vSqdSum_158 = vSqdSum_152 + _157;
+
+./src/MD.cpp:649: note: Unknown def-use cycle pattern.
+./src/MD.cpp:649: note: Unsupported pattern.
+./src/MD.cpp:649: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:649: note: unexpected pattern.
+Analyzing loop at ./src/MD.cpp:638
+
+./src/MD.cpp:638: note: misalign = 0 bytes of ref v[0][i_175]
+./src/MD.cpp:638: note: misalign = 0 bytes of ref v[0][i_175]
+./src/MD.cpp:638: note: misalign = 8 bytes of ref v[1][i_175]
+./src/MD.cpp:638: note: misalign = 8 bytes of ref v[1][i_175]
+./src/MD.cpp:638: note: misalign = 16 bytes of ref v[2][i_175]
+./src/MD.cpp:638: note: misalign = 16 bytes of ref v[2][i_175]
+./src/MD.cpp:638: note: virtual phi. skip.
+./src/MD.cpp:638: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:638: note: not ssa-name.
+./src/MD.cpp:638: note: use not simple.
+./src/MD.cpp:638: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:638: note: not ssa-name.
+./src/MD.cpp:638: note: use not simple.
+./src/MD.cpp:638: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:638: note: not ssa-name.
+./src/MD.cpp:638: note: use not simple.
+./src/MD.cpp:638: note: virtual phi. skip.
+
+Vectorizing loop at ./src/MD.cpp:638
+
+./src/MD.cpp:638: note: virtual phi. skip.
+Analyzing loop at ./src/MD.cpp:631
+
+./src/MD.cpp:631: note: misalign = 0 bytes of ref vCM[i_84]
+./src/MD.cpp:631: note: misalign = 0 bytes of ref vCM[i_84]
+./src/MD.cpp:631: note: virtual phi. skip.
+./src/MD.cpp:631: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:631: note: not ssa-name.
+./src/MD.cpp:631: note: use not simple.
+./src/MD.cpp:631: note: not vectorized: iteration count too small.
+./src/MD.cpp:631: note: not vectorized: iteration count smaller than vectorization factor.
+./src/MD.cpp:631: note: bad operation or unsupported loop bound.
+./src/MD.cpp:631: note: misalign = 0 bytes of ref vCM[i_84]
+./src/MD.cpp:631: note: misalign = 0 bytes of ref vCM[i_84]
+./src/MD.cpp:631: note: virtual phi. skip.
+./src/MD.cpp:631: note: num. args = 4 (not unary/binary/ternary op).
+./src/MD.cpp:631: note: not ssa-name.
+./src/MD.cpp:631: note: use not simple.
+./src/MD.cpp:631: note: virtual phi. skip.
+
+Vectorizing loop at ./src/MD.cpp:631
+
+./src/MD.cpp:631: note: virtual phi. skip.
+Analyzing loop at ./src/MD.cpp:620
+
+./src/MD.cpp:620: note: step unknown.
+./src/MD.cpp:620: note: step unknown.
+./src/MD.cpp:620: note: step unknown.
+./src/MD.cpp:620: note: reduction: unsafe fp math optimization: _199 = _198 + prephitmp_212;
+
+./src/MD.cpp:620: note: Unknown def-use cycle pattern.
+./src/MD.cpp:620: note: reduction: unsafe fp math optimization: _192 = _191 + prephitmp_211;
+
+./src/MD.cpp:620: note: Unknown def-use cycle pattern.
+./src/MD.cpp:620: note: reduction: unsafe fp math optimization: _185 = _184 + prephitmp_210;
+
+./src/MD.cpp:620: note: Unknown def-use cycle pattern.
+./src/MD.cpp:620: note: Unsupported pattern.
+./src/MD.cpp:620: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:620: note: unexpected pattern.
+./src/MD.cpp:620: note: step unknown.
+./src/MD.cpp:620: note: step unknown.
+./src/MD.cpp:620: note: step unknown.
+./src/MD.cpp:620: note: reduction: unsafe fp math optimization: _199 = _198 + prephitmp_212;
+
+./src/MD.cpp:620: note: Unknown def-use cycle pattern.
+./src/MD.cpp:620: note: reduction: unsafe fp math optimization: _192 = _191 + prephitmp_211;
+
+./src/MD.cpp:620: note: Unknown def-use cycle pattern.
+./src/MD.cpp:620: note: reduction: unsafe fp math optimization: _185 = _184 + prephitmp_210;
+
+./src/MD.cpp:620: note: Unknown def-use cycle pattern.
+./src/MD.cpp:620: note: Unsupported pattern.
+./src/MD.cpp:620: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:620: note: unexpected pattern.
+Analyzing loop at ./src/MD.cpp:608
+
+./src/MD.cpp:608: note: not vectorized: multiple nested loops.
+./src/MD.cpp:608: note: bad loop form.
+Analyzing loop at ./src/MD.cpp:610
+
+./src/MD.cpp:610: note: not vectorized: control flow in loop.
+./src/MD.cpp:610: note: bad inner-loop form.
+./src/MD.cpp:610: note: not vectorized: Bad inner loop.
+./src/MD.cpp:610: note: bad loop form.
+Analyzing loop at ./src/MD.cpp:676
+
+./src/MD.cpp:676: note: not vectorized: control flow in loop.
+./src/MD.cpp:676: note: bad loop form.
+./src/MD.cpp:604: note: vectorized 3 loops in function.
+
+./src/MD.cpp:608: note: misalign = 0 bytes of ref N
+./src/MD.cpp:608: note: not consecutive access N.22_81 = N;
+
+./src/MD.cpp:608: note: Failed to SLP the basic block.
+./src/MD.cpp:608: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:608: note: misalign = 0 bytes of ref N
+./src/MD.cpp:608: note: not consecutive access N.22_81 = N;
+
+./src/MD.cpp:608: note: Failed to SLP the basic block.
+./src/MD.cpp:608: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:671: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:673: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:676: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:678: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:685: note: misalign = 0 bytes of ref available
+./src/MD.cpp:685: note: misalign = 0 bytes of ref gset
+./src/MD.cpp:685: note: not consecutive access available = 0;
+
+./src/MD.cpp:685: note: not consecutive access _110 = gset;
+
+./src/MD.cpp:685: note: Failed to SLP the basic block.
+./src/MD.cpp:685: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:685: note: misalign = 0 bytes of ref available
+./src/MD.cpp:685: note: misalign = 0 bytes of ref gset
+./src/MD.cpp:685: note: not consecutive access available = 0;
+
+./src/MD.cpp:685: note: not consecutive access _110 = gset;
+
+./src/MD.cpp:685: note: Failed to SLP the basic block.
+./src/MD.cpp:685: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:612: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:612: note: Unknown alignment for access: v
+./src/MD.cpp:612: note: not consecutive access v[j_21][i_122] = _111;
+
+./src/MD.cpp:612: note: Failed to SLP the basic block.
+./src/MD.cpp:612: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:612: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:612: note: Unknown alignment for access: v
+./src/MD.cpp:612: note: not consecutive access v[j_21][i_122] = _111;
+
+./src/MD.cpp:612: note: Failed to SLP the basic block.
+./src/MD.cpp:612: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:608: note: misalign = 0 bytes of ref N
+./src/MD.cpp:608: note: not consecutive access N.22_24 = N;
+
+./src/MD.cpp:608: note: Failed to SLP the basic block.
+./src/MD.cpp:608: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:608: note: misalign = 0 bytes of ref N
+./src/MD.cpp:608: note: not consecutive access N.22_24 = N;
+
+./src/MD.cpp:608: note: Failed to SLP the basic block.
+./src/MD.cpp:608: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:618: note: misalign = 0 bytes of ref vCM[0]
+./src/MD.cpp:618: note: misalign = 8 bytes of ref vCM[1]
+./src/MD.cpp:618: note: misalign = 16 bytes of ref vCM[2]
+./src/MD.cpp:618: note: Build SLP failed: unrolling required in basic block SLP
+./src/MD.cpp:618: note: Failed to SLP the basic block.
+./src/MD.cpp:618: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:618: note: misalign = 0 bytes of ref vCM[0]
+./src/MD.cpp:618: note: misalign = 8 bytes of ref vCM[1]
+./src/MD.cpp:618: note: misalign = 0 bytes of ref vCM[2]
+./src/MD.cpp:618: note: Build SLP failed: unrolling required in basic block SLP
+./src/MD.cpp:618: note: Failed to SLP the basic block.
+./src/MD.cpp:618: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:623: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:623: note: Unknown alignment for access: v
+./src/MD.cpp:623: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:623: note: Unknown alignment for access: v
+./src/MD.cpp:623: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:623: note: Unknown alignment for access: v
+./src/MD.cpp:623: note: Failed to SLP the basic block.
+./src/MD.cpp:623: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:623: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:623: note: Unknown alignment for access: v
+./src/MD.cpp:623: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:623: note: Unknown alignment for access: v
+./src/MD.cpp:623: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:623: note: Unknown alignment for access: v
+./src/MD.cpp:623: note: Failed to SLP the basic block.
+./src/MD.cpp:623: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:604: note: misalign = 0 bytes of ref vCM[0]
+./src/MD.cpp:604: note: misalign = 8 bytes of ref vCM[1]
+./src/MD.cpp:604: note: misalign = 16 bytes of ref vCM[2]
+./src/MD.cpp:604: note: Build SLP failed: unrolling required in basic block SLP
+./src/MD.cpp:604: note: Failed to SLP the basic block.
+./src/MD.cpp:604: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: misalign = 0 bytes of ref vCM[0]
+./src/MD.cpp:604: note: misalign = 8 bytes of ref vCM[1]
+./src/MD.cpp:604: note: misalign = 0 bytes of ref vCM[2]
+./src/MD.cpp:604: note: Build SLP failed: unrolling required in basic block SLP
+./src/MD.cpp:604: note: Failed to SLP the basic block.
+./src/MD.cpp:604: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:627: note: not vectorized: no vectype for stmt: vect_var_.387_287 = MEM[(double[3] *)vect_pvCM.386_284];
+ scalar_type: vector(2) double
+./src/MD.cpp:627: note: misalign = 0 bytes of ref m
+./src/MD.cpp:627: note: misalign = 0 bytes of ref vCM[0]
+./src/MD.cpp:627: note: misalign = 8 bytes of ref vCM[1]
+./src/MD.cpp:627: note: misalign = 16 bytes of ref vCM[2]
+./src/MD.cpp:627: note: not consecutive access m.23_40 = m;
+
+./src/MD.cpp:627: note: Build SLP failed: unrolling required in basic block SLP
+./src/MD.cpp:627: note: Failed to SLP the basic block.
+./src/MD.cpp:627: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:627: note: not vectorized: no vectype for stmt: vect_var_.387_287 = MEM[(double[3] *)vect_pvCM.386_284];
+ scalar_type: vector(2) double
+./src/MD.cpp:627: note: misalign = 0 bytes of ref m
+./src/MD.cpp:627: note: misalign = 0 bytes of ref vCM[0]
+./src/MD.cpp:627: note: misalign = 8 bytes of ref vCM[1]
+./src/MD.cpp:627: note: misalign = 0 bytes of ref vCM[2]
+./src/MD.cpp:627: note: not consecutive access m.23_40 = m;
+
+./src/MD.cpp:627: note: Build SLP failed: unrolling required in basic block SLP
+./src/MD.cpp:627: note: Failed to SLP the basic block.
+./src/MD.cpp:627: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: misalign = 0 bytes of ref vCM[0]
+./src/MD.cpp:604: note: misalign = 8 bytes of ref vCM[1]
+./src/MD.cpp:604: note: misalign = 16 bytes of ref vCM[2]
+./src/MD.cpp:604: note: Failed to SLP the basic block.
+./src/MD.cpp:604: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: misalign = 0 bytes of ref vCM[0]
+./src/MD.cpp:604: note: misalign = 8 bytes of ref vCM[1]
+./src/MD.cpp:604: note: misalign = 0 bytes of ref vCM[2]
+./src/MD.cpp:604: note: Failed to SLP the basic block.
+./src/MD.cpp:604: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:641: note: not vectorized: no vectype for stmt: vect_var_.351_228 = MEM[(double[3][5001] *)vect_pv.347_206];
+ scalar_type: vector(4) double
+./src/MD.cpp:641: note: Failed to SLP the basic block.
+./src/MD.cpp:641: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: interleaved store with gaps
+./src/MD.cpp:641: note: not vectorized: complicated access pattern.
+./src/MD.cpp:641: note: Failed to SLP the basic block.
+./src/MD.cpp:641: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: interleaved store with gaps
+./src/MD.cpp:641: note: not vectorized: complicated access pattern.
+./src/MD.cpp:641: note: Failed to SLP the basic block.
+./src/MD.cpp:641: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: interleaved store with gaps
+./src/MD.cpp:641: note: not vectorized: complicated access pattern.
+./src/MD.cpp:641: note: Failed to SLP the basic block.
+./src/MD.cpp:641: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: interleaved store with gaps
+./src/MD.cpp:641: note: not vectorized: complicated access pattern.
+./src/MD.cpp:641: note: Failed to SLP the basic block.
+./src/MD.cpp:641: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: interleaved store with gaps
+./src/MD.cpp:641: note: not vectorized: complicated access pattern.
+./src/MD.cpp:641: note: Failed to SLP the basic block.
+./src/MD.cpp:641: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: Unknown alignment for access: v
+./src/MD.cpp:641: note: interleaved store with gaps
+./src/MD.cpp:641: note: not vectorized: complicated access pattern.
+./src/MD.cpp:641: note: Failed to SLP the basic block.
+./src/MD.cpp:641: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:652: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:652: note: Unknown alignment for access: v
+./src/MD.cpp:652: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:652: note: Unknown alignment for access: v
+./src/MD.cpp:652: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:652: note: Unknown alignment for access: v
+./src/MD.cpp:652: note: Failed to SLP the basic block.
+./src/MD.cpp:652: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:652: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:652: note: Unknown alignment for access: v
+./src/MD.cpp:652: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:652: note: Unknown alignment for access: v
+./src/MD.cpp:652: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:652: note: Unknown alignment for access: v
+./src/MD.cpp:652: note: Failed to SLP the basic block.
+./src/MD.cpp:652: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:656: note: misalign = 0 bytes of ref Tinit
+./src/MD.cpp:656: note: not consecutive access Tinit.24_76 = Tinit;
+
+./src/MD.cpp:656: note: Failed to SLP the basic block.
+./src/MD.cpp:656: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:656: note: misalign = 0 bytes of ref Tinit
+./src/MD.cpp:656: note: not consecutive access Tinit.24_76 = Tinit;
+
+./src/MD.cpp:656: note: Failed to SLP the basic block.
+./src/MD.cpp:656: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: no vectype for stmt: vCM ={v} {CLOBBER};
+ scalar_type: double[3]
+./src/MD.cpp:604: note: Failed to SLP the basic block.
+./src/MD.cpp:604: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:661: note: not vectorized: no vectype for stmt: vect_var_.314_153 = MEM[(double[3][5001] *)vect_pv.310_159];
+ scalar_type: vector(4) double
+./src/MD.cpp:661: note: Failed to SLP the basic block.
+./src/MD.cpp:661: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: interleaved store with gaps
+./src/MD.cpp:661: note: not vectorized: complicated access pattern.
+./src/MD.cpp:661: note: Failed to SLP the basic block.
+./src/MD.cpp:661: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: interleaved store with gaps
+./src/MD.cpp:661: note: not vectorized: complicated access pattern.
+./src/MD.cpp:661: note: Failed to SLP the basic block.
+./src/MD.cpp:661: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: interleaved store with gaps
+./src/MD.cpp:661: note: not vectorized: complicated access pattern.
+./src/MD.cpp:661: note: Failed to SLP the basic block.
+./src/MD.cpp:661: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: interleaved store with gaps
+./src/MD.cpp:661: note: not vectorized: complicated access pattern.
+./src/MD.cpp:661: note: Failed to SLP the basic block.
+./src/MD.cpp:661: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: interleaved store with gaps
+./src/MD.cpp:661: note: not vectorized: complicated access pattern.
+./src/MD.cpp:661: note: Failed to SLP the basic block.
+./src/MD.cpp:661: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: Unknown alignment for access: v
+./src/MD.cpp:661: note: interleaved store with gaps
+./src/MD.cpp:661: note: not vectorized: complicated access pattern.
+./src/MD.cpp:661: note: Failed to SLP the basic block.
+./src/MD.cpp:661: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:604: note: misalign = 0 bytes of ref available
+./src/MD.cpp:604: note: not consecutive access pretmp_240 = available;
+
+./src/MD.cpp:604: note: Failed to SLP the basic block.
+./src/MD.cpp:604: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: misalign = 0 bytes of ref available
+./src/MD.cpp:604: note: not consecutive access pretmp_240 = available;
+
+./src/MD.cpp:604: note: Failed to SLP the basic block.
+./src/MD.cpp:604: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:604: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:618: note: misalign = 0 bytes of ref vCM[0]
+./src/MD.cpp:618: note: misalign = 8 bytes of ref vCM[1]
+./src/MD.cpp:618: note: misalign = 16 bytes of ref vCM[2]
+./src/MD.cpp:618: note: Build SLP failed: unrolling required in basic block SLP
+./src/MD.cpp:618: note: Failed to SLP the basic block.
+./src/MD.cpp:618: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:618: note: misalign = 0 bytes of ref vCM[0]
+./src/MD.cpp:618: note: misalign = 8 bytes of ref vCM[1]
+./src/MD.cpp:618: note: misalign = 0 bytes of ref vCM[2]
+./src/MD.cpp:618: note: Build SLP failed: unrolling required in basic block SLP
+./src/MD.cpp:618: note: Failed to SLP the basic block.
+./src/MD.cpp:618: note: not vectorized: failed to find SLP opportunities in basic block.
+
+Analyzing loop at ./src/MD.cpp:413
+
+./src/MD.cpp:413: note: not vectorized: multiple nested loops.
+./src/MD.cpp:413: note: bad loop form.
+Analyzing loop at ./src/MD.cpp:414
+
+./src/MD.cpp:414: note: not vectorized: control flow in loop.
+./src/MD.cpp:414: note: bad inner-loop form.
+./src/MD.cpp:414: note: not vectorized: Bad inner loop.
+./src/MD.cpp:414: note: bad loop form.
+Analyzing loop at ./src/MD.cpp:415
+
+./src/MD.cpp:415: note: not vectorized: control flow in loop.
+./src/MD.cpp:415: note: bad loop form.
+./src/MD.cpp:400: note: vectorized 0 loops in function.
+
+./src/MD.cpp:405: note: misalign = 0 bytes of ref N
+./src/MD.cpp:405: note: not consecutive access N.10_12 = N;
+
+./src/MD.cpp:405: note: Failed to SLP the basic block.
+./src/MD.cpp:405: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:405: note: misalign = 0 bytes of ref N
+./src/MD.cpp:405: note: not consecutive access N.10_12 = N;
+
+./src/MD.cpp:405: note: Failed to SLP the basic block.
+./src/MD.cpp:405: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:400: note: misalign = 0 bytes of ref N
+./src/MD.cpp:400: note: not consecutive access pretmp_59 = N;
+
+./src/MD.cpp:400: note: Failed to SLP the basic block.
+./src/MD.cpp:400: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:400: note: misalign = 0 bytes of ref N
+./src/MD.cpp:400: note: not consecutive access pretmp_59 = N;
+
+./src/MD.cpp:400: note: Failed to SLP the basic block.
+./src/MD.cpp:400: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:400: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:416: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:418: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:418: note: Unknown alignment for access: r
+./src/MD.cpp:418: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:418: note: Unknown alignment for access: r
+./src/MD.cpp:418: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:418: note: Unknown alignment for access: r
+./src/MD.cpp:418: note: Failed to SLP the basic block.
+./src/MD.cpp:418: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:418: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:418: note: Unknown alignment for access: r
+./src/MD.cpp:418: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:418: note: Unknown alignment for access: r
+./src/MD.cpp:418: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:418: note: Unknown alignment for access: r
+./src/MD.cpp:418: note: Failed to SLP the basic block.
+./src/MD.cpp:418: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:422: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:414: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:400: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:400: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:413: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:400: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:400: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:428: note: not vectorized: not enough data-refs in basic block.
+
+Analyzing loop at ./src/MD.cpp:297
+
+./src/MD.cpp:297: note: not vectorized: multiple nested loops.
+./src/MD.cpp:297: note: bad loop form.
+Analyzing loop at ./src/MD.cpp:492
+
+./src/MD.cpp:492: note: not vectorized: inner-loop count not invariant.
+./src/MD.cpp:492: note: bad loop form.
+Analyzing loop at ./src/MD.cpp:492
+
+./src/MD.cpp:492: note: step unknown.
+./src/MD.cpp:492: note: reduction: unsafe fp math optimization: Pot_249 = _247 + Pot_266;
+
+./src/MD.cpp:492: note: Unknown def-use cycle pattern.
+./src/MD.cpp:492: note: Unsupported pattern.
+./src/MD.cpp:492: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:492: note: unexpected pattern.
+./src/MD.cpp:492: note: step unknown.
+./src/MD.cpp:492: note: reduction: unsafe fp math optimization: Pot_249 = _247 + Pot_266;
+
+./src/MD.cpp:492: note: Unknown def-use cycle pattern.
+./src/MD.cpp:492: note: Unsupported pattern.
+./src/MD.cpp:492: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:492: note: unexpected pattern.
+Analyzing loop at ./src/MD.cpp:469
+
+./src/MD.cpp:469: note: step unknown.
+./src/MD.cpp:469: note: reduction: unsafe fp math optimization: KE_217 = _215 + KE_212;
+
+./src/MD.cpp:469: note: Unknown def-use cycle pattern.
+./src/MD.cpp:469: note: Unsupported pattern.
+./src/MD.cpp:469: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:469: note: unexpected pattern.
+./src/MD.cpp:469: note: step unknown.
+./src/MD.cpp:469: note: reduction: unsafe fp math optimization: KE_217 = _215 + KE_212;
+
+./src/MD.cpp:469: note: Unknown def-use cycle pattern.
+./src/MD.cpp:469: note: Unsupported pattern.
+./src/MD.cpp:469: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:469: note: unexpected pattern.
+Analyzing loop at ./src/MD.cpp:451
+
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vz2_199 = _197 + vz2_209;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vy2_195 = _193 + vy2_211;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vx2_191 = _189 + vx2_208;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: Unsupported pattern.
+./src/MD.cpp:451: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:451: note: unexpected pattern.
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: step unknown.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vz2_199 = _197 + vz2_209;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vy2_195 = _193 + vy2_211;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: reduction: unsafe fp math optimization: vx2_191 = _189 + vx2_208;
+
+./src/MD.cpp:451: note: Unknown def-use cycle pattern.
+./src/MD.cpp:451: note: Unsupported pattern.
+./src/MD.cpp:451: note: not vectorized: unsupported use in stmt.
+./src/MD.cpp:451: note: unexpected pattern.
+./src/MD.cpp:85: note: vectorized 0 loops in function.
+
+./src/MD.cpp:96: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:151: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:158: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:166: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:173: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:186: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:189: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:203: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:207: note: misalign = 0 bytes of ref Tinit
+./src/MD.cpp:207: note: not consecutive access Tinit = Tinit.1_60;
+
+./src/MD.cpp:207: note: Failed to SLP the basic block.
+./src/MD.cpp:207: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:207: note: misalign = 0 bytes of ref Tinit
+./src/MD.cpp:207: note: not consecutive access Tinit = Tinit.1_60;
+
+./src/MD.cpp:207: note: Failed to SLP the basic block.
+./src/MD.cpp:207: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:237: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:248: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:263: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:270: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:276: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:301: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:302: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:303: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:304: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:305: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:306: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:307: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:308: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:309: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:310: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:311: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:312: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:313: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:314: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:315: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:316: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:317: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:318: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:319: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:320: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:321: note: not consecutive access stdout.6_119 = stdout;
+
+./src/MD.cpp:321: note: Failed to SLP the basic block.
+./src/MD.cpp:321: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:321: note: not consecutive access stdout.6_119 = stdout;
+
+./src/MD.cpp:321: note: Failed to SLP the basic block.
+./src/MD.cpp:321: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:85: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: Failed to SLP the basic block.
+./src/MD.cpp:453: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:453: note: Unknown alignment for access: v
+./src/MD.cpp:453: note: Failed to SLP the basic block.
+./src/MD.cpp:453: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:85: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:85: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: Failed to SLP the basic block.
+./src/MD.cpp:474: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:474: note: Unknown alignment for access: v
+./src/MD.cpp:474: note: Failed to SLP the basic block.
+./src/MD.cpp:474: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:85: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:492: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:85: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:85: note: Unknown alignment for access: r
+./src/MD.cpp:85: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:85: note: Unknown alignment for access: r
+./src/MD.cpp:85: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:85: note: Unknown alignment for access: r
+./src/MD.cpp:85: note: Failed to SLP the basic block.
+./src/MD.cpp:85: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:85: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:85: note: Unknown alignment for access: r
+./src/MD.cpp:85: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:85: note: Unknown alignment for access: r
+./src/MD.cpp:85: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:85: note: Unknown alignment for access: r
+./src/MD.cpp:85: note: Failed to SLP the basic block.
+./src/MD.cpp:85: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: Failed to SLP the basic block.
+./src/MD.cpp:494: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: SLP: step doesn't divide the vector-size.
+./src/MD.cpp:494: note: Unknown alignment for access: r
+./src/MD.cpp:494: note: Failed to SLP the basic block.
+./src/MD.cpp:494: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:85: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:457: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:506: note: misalign = 0 bytes of ref epsilon
+./src/MD.cpp:506: note: misalign = 0 bytes of ref kB
+./src/MD.cpp:506: note: not consecutive access epsilon.17_252 = epsilon;
+
+./src/MD.cpp:506: note: not consecutive access kB.8_130 = kB;
+
+./src/MD.cpp:506: note: Failed to SLP the basic block.
+./src/MD.cpp:506: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:506: note: misalign = 0 bytes of ref epsilon
+./src/MD.cpp:506: note: misalign = 0 bytes of ref kB
+./src/MD.cpp:506: note: not consecutive access epsilon.17_252 = epsilon;
+
+./src/MD.cpp:506: note: not consecutive access kB.8_130 = kB;
+
+./src/MD.cpp:506: note: Failed to SLP the basic block.
+./src/MD.cpp:506: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:85: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:359: note: misalign = 0 bytes of ref N
+./src/MD.cpp:359: note: misalign = 0 bytes of ref kBSI
+./src/MD.cpp:359: note: misalign = 0 bytes of ref NA
+./src/MD.cpp:359: note: not consecutive access N.2_146 = N;
+
+./src/MD.cpp:359: note: not consecutive access kBSI.9_148 = kBSI;
+
+./src/MD.cpp:359: note: not consecutive access NA.4_152 = NA;
+
+./src/MD.cpp:359: note: Failed to SLP the basic block.
+./src/MD.cpp:359: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:359: note: misalign = 0 bytes of ref N
+./src/MD.cpp:359: note: misalign = 0 bytes of ref kBSI
+./src/MD.cpp:359: note: misalign = 0 bytes of ref NA
+./src/MD.cpp:359: note: not consecutive access N.2_146 = N;
+
+./src/MD.cpp:359: note: not consecutive access kBSI.9_148 = kBSI;
+
+./src/MD.cpp:359: note: not consecutive access NA.4_152 = NA;
+
+./src/MD.cpp:359: note: Failed to SLP the basic block.
+./src/MD.cpp:359: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:85: note: misalign = 0 bytes of ref m
+./src/MD.cpp:85: note: not consecutive access pretmp_357 = m;
+
+./src/MD.cpp:85: note: Failed to SLP the basic block.
+./src/MD.cpp:85: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:85: note: misalign = 0 bytes of ref m
+./src/MD.cpp:85: note: not consecutive access pretmp_357 = m;
+
+./src/MD.cpp:85: note: Failed to SLP the basic block.
+./src/MD.cpp:85: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:457: note: misalign = 0 bytes of ref m
+./src/MD.cpp:457: note: not consecutive access pretmp_348 = m;
+
+./src/MD.cpp:457: note: Failed to SLP the basic block.
+./src/MD.cpp:457: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:457: note: misalign = 0 bytes of ref m
+./src/MD.cpp:457: note: not consecutive access pretmp_348 = m;
+
+./src/MD.cpp:457: note: Failed to SLP the basic block.
+./src/MD.cpp:457: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:488: note: misalign = 0 bytes of ref sigma
+./src/MD.cpp:488: note: not consecutive access sigma.15_277 = sigma;
+
+./src/MD.cpp:488: note: Failed to SLP the basic block.
+./src/MD.cpp:488: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:488: note: misalign = 0 bytes of ref sigma
+./src/MD.cpp:488: note: not consecutive access sigma.15_277 = sigma;
+
+./src/MD.cpp:488: note: Failed to SLP the basic block.
+./src/MD.cpp:488: note: not vectorized: failed to find SLP opportunities in basic block.
+
+Analyzing loop at ./src/MD.cpp:676
+
+./src/MD.cpp:676: note: not vectorized: control flow in loop.
+./src/MD.cpp:676: note: bad loop form.
+./src/MD.cpp:667: note: vectorized 0 loops in function.
+
+./src/MD.cpp:671: note: misalign = 0 bytes of ref available
+./src/MD.cpp:671: note: not consecutive access available.25_5 = available;
+
+./src/MD.cpp:671: note: Failed to SLP the basic block.
+./src/MD.cpp:671: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:671: note: misalign = 0 bytes of ref available
+./src/MD.cpp:671: note: not consecutive access available.25_5 = available;
+
+./src/MD.cpp:671: note: Failed to SLP the basic block.
+./src/MD.cpp:671: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:667: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:667: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:673: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:676: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:678: note: not vectorized: not enough data-refs in basic block.
+
+./src/MD.cpp:685: note: misalign = 0 bytes of ref available
+./src/MD.cpp:685: note: misalign = 0 bytes of ref gset
+./src/MD.cpp:685: note: not consecutive access available = 0;
+
+./src/MD.cpp:685: note: not consecutive access _33 = gset;
+
+./src/MD.cpp:685: note: Failed to SLP the basic block.
+./src/MD.cpp:685: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:685: note: misalign = 0 bytes of ref available
+./src/MD.cpp:685: note: misalign = 0 bytes of ref gset
+./src/MD.cpp:685: note: not consecutive access available = 0;
+
+./src/MD.cpp:685: note: not consecutive access _33 = gset;
+
+./src/MD.cpp:685: note: Failed to SLP the basic block.
+./src/MD.cpp:685: note: not vectorized: failed to find SLP opportunities in basic block.
+
+./src/MD.cpp:667: note: not vectorized: not enough data-refs in basic block.
