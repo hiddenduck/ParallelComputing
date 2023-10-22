@@ -549,22 +549,23 @@ void computeAccelerations() {
             rij1 = r[1][i] - r[1][j];
             rij2 = r[2][i] - r[2][j];
 
-            r_sqrd = rij0 * rij0 + rij1 * rij1 + rij2 * rij2;
+            r_sqrd = (rij0 * rij0) + (rij1 * rij1) + (rij2 * rij2);
 
             r_sqrd_ = r_sqrd * r_sqrd * r_sqrd;
             f = 24 * (2 - r_sqrd_) / (r_sqrd_ * r_sqrd_ * r_sqrd);
             f0[j] = f * rij0;
             f1[j] = f * rij1;
             f2[j] = f * rij2;
-        }
-
-        //  from F = ma, where m = 1 in natural units!
-        for (j = i + 1; j < N; j++) {
+            
             a[0][j] -= f0[j];
             a[1][j] -= f1[j];
             a[2][j] -= f2[j];
         }
 
+        //  from F = ma, where m = 1 in natural units!
+        // for (j = i + 1; j < N; j++) {
+        // }
+        //
         for (j = i + 1; j < N; j++) {
             a[0][i] += f0[j];
             a[1][i] += f1[j];
@@ -596,7 +597,7 @@ double VelocityVerlet(double dt, int iter, FILE *fp) {
     // printf("  Updated Positions!\n");
     for (i = 0; i < N; i++) {
         for (j = 0; j < 3; j++) {
-            r[j][i] += v[j][i] * dt + 0.5 * a[j][i] * dt * dt;
+            r[j][i] += dt*(v[j][i] + 0.5 * a[j][i] * dt);
 
             v[j][i] += 0.5 * a[j][i] * dt;
         }
