@@ -1,6 +1,6 @@
 CC = gcc
 SRC = src/
-CFLAGS = -O2 
+CFLAGS = -Ofast -ftree-vectorize -mavx -mtune=native
 
 .DEFAULT_GOAL = MD.exe
 
@@ -11,4 +11,4 @@ clean:
 	rm ./MD.exe
 
 run:
-	./MD.exe < inputdata.txt
+	srun --partition=cpar ./MD.exe < inputdata.txt
