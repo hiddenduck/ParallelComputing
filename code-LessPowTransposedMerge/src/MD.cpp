@@ -457,61 +457,6 @@ double Kinetic() { // Write Function here!
     return kin;
 }
 
-// Function to calculate the potential energy of the system
-double Potential() {
-    double quot, r2, term1, term2, Pot, rx, ry, rz, r_sub0, r_sub1, r_sub2;
-    int i, j, k;
-
-    // double *r_sub0 = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *r_sub1 = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *r_sub2 = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *quot = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *r_2 = (double *)aligned_alloc(64, N * sizeof(double));
-
-    double s = sigma * sigma;
-
-    Pot = 0.;
-    for (i = 0; i < N; i++) {
-        // for (j = i + 1; j < N; j++) {
-        //
-        //      r_sub0[j] = (r[0][i] - r[0][j]) * (r[0][i] - r[0][j]);
-        //      r_sub1[j] = (r[1][i] - r[1][j]) * (r[1][i] - r[1][j]);
-        //      r_sub2[j] = (r[2][i] - r[2][j]) * (r[2][i] - r[2][j]);
-        //
-        //      rx = (r[0][i] - r[0][j]);
-        //      ry = (r[1][i] - r[1][j]);
-        //      rz = (r[2][i] - r[2][j]);
-        //  }
-        //  for (j = i + 1; j < N; j++) {
-        //      r_sub0[j] = r_sub0[j] * r_sub0[j];
-        //      r_sub1[j] = r_sub1[j] * r_sub1[j];
-        //      r_sub2[j] = r_sub2[j] * r_sub2[j];
-        //  }
-
-        // for (j = i + 1; j < N; j++) {
-        //     r_2[j] = r_sub0[j] + r_sub1[j] + r_sub2[j];
-        // }
-
-        for (j = i + 1; j < N; j++) {
-
-            r_sub0 = (r[0][i] - r[0][j]) * (r[0][i] - r[0][j]);
-            r_sub1 = (r[1][i] - r[1][j]) * (r[1][i] - r[1][j]);
-            r_sub2 = (r[2][i] - r[2][j]) * (r[2][i] - r[2][j]);
-
-            quot = s / (r_sub0 + r_sub1 + r_sub2);
-            quot = quot * quot * quot;
-            Pot += quot * (quot - 1);
-        }
-
-    }
-
-    // free(r_sub0);
-    // free(r_sub1);
-    // free(r_sub2);
-    // free(quot);
-
-    return 8 * epsilon * Pot;
-}
 
 //   Uses the derivative of the Lennard-Jones potential to calculate
 //   the forces on each atom.  Then uses a = F/m to calculate the
@@ -520,15 +465,6 @@ double computeAccelerations() {
     int i, j, k;
     // double rij[3]; // position of i relative to j
     double quot, r_sqrd_, r_sqrd, f, rij0, rij1, rij2;
-    // double *r_ij0 = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *r_ij1 = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *r_ij2 = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *r_sqrd = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *r_sqrd_ = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *f = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *f0 = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *f1 = (double *)aligned_alloc(64, N * sizeof(double));
-    // double *f2 = (double *)aligned_alloc(64, N * sizeof(double));
     double s = sigma*sigma;
     double Pot = 0;
 
@@ -538,32 +474,6 @@ double computeAccelerations() {
         }
     }
     for (i = 0; i < N - 1; i++) { // loop over all distinct pairs i,j
-        // for (j = i + 1; j < N; j++) {
-            // initialize r^2 to zero
-
-            // r_ij0[j] = r[0][i] - r[0][j];
-            // r_ij1[j] = r[1][i] - r[1][j];
-            // r_ij2[j] = r[2][i] - r[2][j];
-
-            //  component-by-componenent position of i relative to j
-            // rij[0] = r[0][i] - r[0][j];
-            // rij[1] = r[1][i] - r[1][j];
-            // rij[2] = r[2][i] - r[2][j];
-        // }
-
-        // for (j = i + 1; j < N; j++) {
-        //     r_sqrd[j] = r_ij0[j] * r_ij0[j]+
-        //                 r_ij1[j] * r_ij1[j]+
-        //                 r_ij2[j] * r_ij2[j];
-        // }
-
-        // for (j = i + 1; j < N; j++) {
-        //     r_sqrd[j] = r_ij0[j] + r_ij1[j] + r_ij2[j];
-        //     //  sum of squares of the components
-        //     // rSqd += rij[0] * r_ij0[j];
-        //     // rSqd += rij[1] * r_ij1[j];
-        //     // rSqd += rij[2] * r_ij2[j];
-        // }
 
         //  From derivative of Lennard-Jones with sigma and epsilon set
         //  equal to 1 in natural units!
@@ -584,31 +494,18 @@ double computeAccelerations() {
             a[1][j] -= aux[1][j];
             a[2][j] -= aux[2][j];
             
+            //compute de potencial energy
             quot = s / (r_sqrd);
             quot = quot * quot * quot;
             Pot += quot * (quot - 1);
         }
 
-        //  from F = ma, where m = 1 in natural units!
-        // for (j = i + 1; j < N; j++) {
-        // }
-        //
         for (j = i + 1; j < N; j++) {
             a[0][i] += aux[0][j];
             a[1][i] += aux[1][j];
             a[2][i] += aux[2][j];
         }
-        // a[k][j] -= f * rij[k];
     }
-    // free(r_sqrd_);
-    // free(f);
-    // free(r_sqrd);
-    // free(r_ij0);
-    // free(r_ij1);
-    // free(r_ij2);
-    // free(f0);
-    // free(f1);
-    // free(f2);
     return 8 * epsilon *Pot;
 }
 
