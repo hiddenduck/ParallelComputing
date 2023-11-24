@@ -469,14 +469,13 @@ double computeAccelerations() {
     double s = sigma*sigma;
     double Pot = 0;
 
-    #pragma omp parallel for
     for (i = 0; i < N; i++) { // set all accelerations to zero
         for (k = 0; k < 3; k++) {
             a[k][i] = 0;
         }
     }
 
-    #pragma omp parallel for private (i,j, k, quot, r_sqrd_, f, r_sqrd, rij0, rij1, rij2) reduction(+:Pot)
+    #pragma omp parallel for private (i, aux, j, k, quot, r_sqrd_, f, r_sqrd, rij0, rij1, rij2) reduction(+:Pot) reduction(+:a[:3][:N])
     for (i = 0; i < N - 1; i++) { // loop over all distinct pairs i,j
 
         //  From derivative of Lennard-Jones with sigma and epsilon set
