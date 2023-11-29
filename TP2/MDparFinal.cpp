@@ -474,7 +474,7 @@ double computeAccelerations() {
         }
     }
 
-    #pragma omp parallel for schedule(static, 10) private(aux, i, j, quot, r_sqrd_, f, r_sqrd, rij0, rij1, rij2) reduction(+:Pot) reduction(+:a[:3][:N])
+    #pragma omp parallel for schedule(dynamic, omp_get_num_threads()) private(aux, i, j, quot, r_sqrd_, f, r_sqrd, rij0, rij1, rij2) reduction(+:Pot, +:a[:3][:N])
     for (i = 0; i < N - 1; i++) { // loop over all distinct pairs i,j
         aux[0] = 0;
         aux[1] = 0;
