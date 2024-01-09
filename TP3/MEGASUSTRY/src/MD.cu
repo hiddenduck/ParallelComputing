@@ -30,8 +30,8 @@
  #include <string.h>
  #include "MD.h"
  
- #define NUM_BLOCKS 20
- #define NUM_THREADS_PER_BLOCK 256
+ #define NUM_BLOCKS 24410
+ #define NUM_THREADS_PER_BLOCK 1024
  
  // Number of particles
  int N;
@@ -89,13 +89,10 @@
  double SquaredVelocity();
  double *r_dev, *a_dev, *pot, *ax, *ay, *az, *pot_matrix;
  int bytes;
-
  unsigned int *mapping_dev;
  
  int main() {
 
-    printf("COMECEI\n");
- 
      //  variable delcarations
      int i;
      double dt, Vol, Temp, Press, Pavg, Tavg, rho;
@@ -264,11 +261,12 @@
      //  Put all the atoms in simple crystal lattice and give them random velocities
      //  that corresponds to the initial temperature we have specified
      initialize();
+     
      int i_m,j_m, z_m = 0;
      int mappingsize = sizeof(unsigned int)*(N*(N-1));
      unsigned int *mapping = (unsigned int *) malloc(mappingsize);
      for(i_m=0; i_m < N-1; i_m++){
-        for(j_m=i_m+1; i_m<N; j_m++){
+        for(j_m=i_m+1; j_m<N; j_m++){
             mapping[z_m++] = i_m;
             mapping[z_m++] = j_m;
         }
@@ -277,6 +275,8 @@
      cudaMalloc ((void**) &mapping_dev, mappingsize);
      cudaMemcpy (mapping_dev, mapping, mappingsize, cudaMemcpyHostToDevice);
      checkCUDAError("mapping, memcpy h->d");
+     free(mapping);
+     
  
      //  Based on their positions, calculate the ininial intermolecular forces
      //  The accellerations of each particle will be defined from the forces and their
@@ -287,7 +287,7 @@
      cudaMalloc ((void**) &ay, N*bytes);
      cudaMalloc ((void**) &az, N*bytes);
      cudaMalloc ((void**) &pot, sizeof(double));
-     cudaMalloc ((void**) &pot_matrix, sizeof(double));
+     cudaMalloc ((void**) &pot_matrix, N*bytes);
      checkCUDAError("mem allocation");
      computeAccelerations();
  
@@ -370,8 +370,6 @@
      cudaFree(mapping_dev);
      checkCUDAError("mem free");
 
-     free(mapping);
- 
      // Because we have calculated the instantaneous temperature and pressure,
      // we can take the average over the whole simulation here
      Pavg /= NumTime;
@@ -557,18 +555,34 @@ __device__ double atomicAdd2(double* address, double val)
  }
 
  __global__
- void computeMinus(double *a_x, double *a_y, double *a_z, double *a, int N){
+ void computeMinus(double *a_x, double *a_y, double *a_z, double *a, double *pot, double *POT, int N){
 
     int i = blockIdx.x*blockDim.x+threadIdx.x;
 
-    if(i<N){
-        double x=0, y=0, z=0;
+    if(i > 0 && i<N){
+        
+        double x=0, y=0, z=0, pot_reg=0;
 
         for(int j=0; j<i; j++){
             x += a_x[j*N+i];
             y += a_y[j*N+i];
             z += a_z[j*N+i];
+            pot_reg += pot[i*N+j]; 
         }
+
+        int lid = threadIdx.x ;
+        __shared__ double sdata[NUM_THREADS_PER_BLOCK];
+        sdata[lid] = pot_reg;
+        __syncthreads();
+ 
+        for (unsigned int s=blockDim.x/2; s>0; s>>=1) {
+            if (s < N && lid < s ) {
+                sdata[lid] += sdata[lid + s];
+            }
+            __syncthreads();
+        }
+
+        if (lid == 0) atomicAdd2(POT, sdata[0]);
 
         a[i] += x;
         a[N+i] += y;
@@ -577,33 +591,20 @@ __device__ double atomicAdd2(double* address, double val)
  }
 
  __global__
- void reduce(double *a_x, double *a_y, double *a_z, double *a, double *pot, double *POT, int N){
+ void reduce(double *a_x, double *a_y, double *a_z, double *a, int N){
 
     int i = blockIdx.x*blockDim.x+threadIdx.x;
-    int j = blockIdx.y*blockDim.y+threadIdx.y;
 
-    if(i<N && j<N){
+    if(i<N){
     
-     int lid = NUM_THREADS_PER_BLOCK*threadIdx.x + threadIdx.y;
+     int lid = threadIdx.x ;
 
      __shared__ double sdata[NUM_THREADS_PER_BLOCK];
-     sdata[lid] = pot[lid];
- 
-     __syncthreads();
- 
-     for (unsigned int s=blockDim.x/2; s>0; s>>=1) {
-        if (s < N && lid < s ) {
-            sdata[lid] += sdata[lid + s];
-        }
-        __syncthreads();
-    }
-
-    if (lid == 0) atomicAdd2(POT, sdata[0]);
-     
-     __syncthreads();
      
      sdata[lid] = a_x[lid];
 
+     __syncthreads();
+
      for (unsigned int s=blockDim.x/2; s>0; s>>=1) {
         if (s < N && lid < s ) {
             sdata[lid] += sdata[lid + s];
@@ -611,12 +612,14 @@ __device__ double atomicAdd2(double* address, double val)
         __syncthreads();
     }
 
-    if(lid==0) atomicAdd2(a, sdata[0]);
+    if(lid==0) atomicAdd2(&a[i], sdata[0]);
 
     __syncthreads();
      
      sdata[lid] = a_y[lid];
 
+     __syncthreads();
+
      for (unsigned int s=blockDim.x/2; s>0; s>>=1) {
         if (s < N && lid < s ) {
             sdata[lid] += sdata[lid + s];
@@ -624,12 +627,14 @@ __device__ double atomicAdd2(double* address, double val)
         __syncthreads();
     }
 
-    if(lid==0) atomicAdd2(a, sdata[0]);
+    if(lid==0) atomicAdd2(&a[N+i], sdata[0]);
 
     __syncthreads();
      
      sdata[lid] = a_z[lid];
 
+     __syncthreads();
+
      for (unsigned int s=blockDim.x/2; s>0; s>>=1) {
         if (s < N && lid < s ) {
             sdata[lid] += sdata[lid + s];
@@ -637,19 +642,15 @@ __device__ double atomicAdd2(double* address, double val)
         __syncthreads();
     }
 
-    if(lid==0) atomicAdd2(a, sdata[0]);     
+    if(lid==0) atomicAdd2(&a[2*N+i], sdata[0]);     
      
     }
  }
-
- dim3 threadsPerBlock (16, 16);
- dim3 blocksPerGrid (N/16, N/16);
 
  //   Uses the derivative of the Lennard-Jones potential to calculate
  //   the forces on each atom.  Then uses a = F/m to calculate the
  //   accelleration of each atom.
  double computeAccelerations() {
-    printf("antes do a\n");
      cudaMemset(r_dev, 0.0, 3*bytes);
      cudaMemset(a_dev, 0.0, 3*bytes);
      cudaMemset(pot_matrix, 0.0, N*bytes);
@@ -663,16 +664,15 @@ __device__ double atomicAdd2(double* address, double val)
      
      computeKernel <<< NUM_BLOCKS, NUM_THREADS_PER_BLOCK >>> (r_dev, pot_matrix, sigma*sigma, ax, ay, az, N, mapping_dev);
      checkCUDAError("kernel invocation");
-     printf("poggga\n");
-     reduce <<< blocksPerGrid, threadsPerBlock >>> (ax, ay, az, a_dev, pot_matrix, pot, N);
+
+     reduce <<< NUM_BLOCKS, NUM_THREADS_PER_BLOCK >>> (ax, ay, az, a_dev, N);
      checkCUDAError("kernel invocation");
-     printf("pogggb\n");
+
      cudaMemcpy (&POT, pot, sizeof(double), cudaMemcpyDeviceToHost);
      checkCUDAError("POT, memcpy d->h");
 
-     computeMinus <<< NUM_BLOCKS, NUM_THREADS_PER_BLOCK >>> (ax, ay, az, a_dev, N);
+     computeMinus <<< NUM_BLOCKS, NUM_THREADS_PER_BLOCK >>> (ax, ay, az, a_dev, pot_matrix, pot, N);
      checkCUDAError("minus kernel invocation");
-     printf("pogggc\n");
      cudaMemcpy (a, a_dev, 3*bytes, cudaMemcpyDeviceToHost);
      checkCUDAError("a, memcpy d->h");
      
