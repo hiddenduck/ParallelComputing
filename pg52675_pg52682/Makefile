@@ -28,21 +28,21 @@ vpath %.cu $(SRC_DIR)
 .DEFAULT_GOAL = all
 
 $(BUILD_DIR)/%.o: %.cu
-    $(CXX) -c $(CXXFLAGS) $(INCLUDES) $< -o $@ $(LIBS)
+	$(CXX) -c $(CXXFLAGS) $(INCLUDES) $< -o $@ $(LIBS)
 
 $(BIN_DIR)/$(BIN_NAME): $(OBJ)
-    $(CXX) $(CXXFLAGS) $(INCLUDES) -o $@ $(OBJ) $(LIBS)
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $@ $(OBJ) $(LIBS)
 
 checkdirs:
-    @mkdir -p $(BUILD_DIR)
-    @mkdir -p $(BIN_DIR)
+	@mkdir -p $(BUILD_DIR)
+	@mkdir -p $(BIN_DIR)
 
 all: checkdirs $(BIN_DIR)/$(BIN_NAME)
 
 clean:
-    rm -f $(BUILD_DIR)/* $(BIN_DIR)/*
+	rm -f $(BUILD_DIR)/* $(BIN_DIR)/*
 
 run: $(BIN_DIR)/$(BIN_NAME)
-    module load gcc/7.2.0;\
-    module load cuda/11.3.1;\
-    sbatch ./run.sh
+	module load gcc/7.2.0;\
+	module load cuda/11.3.1;\
+	sbatch ./run.sh
