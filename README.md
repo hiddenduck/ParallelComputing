@@ -12,4 +12,4 @@ This phase focuses on exploring shared memory parallelism using OpenMP directive
 
 # Phase 3: CUDA
 
-The final phase consists in Design and implement a new version for accelerators (GPU with CUDA).
+The final phase involves designing and implementing a new version for accelerators (GPU with CUDA).
